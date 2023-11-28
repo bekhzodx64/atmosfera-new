@@ -1,0 +1,32 @@
+.read-more-purple {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	user-select: none;
+
+	p {
+		font-family: SF-Pro;
+		font-size: 18px;
+		font-weight: 900;
+
+		background: -webkit-linear-gradient(
+			45deg,
+			#a473f3,
+			#a277f5,
+			#7d79fe,
+			#5374fb
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@include media(md) {
+			font-size: 20px;
+		}
+
+		@include media(xl) {
+			font-size: 22px;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.read-more-blue {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	user-select: none;
+
+	p {
+		font-family: SF-Pro;
+		font-size: 18px;
+		font-weight: 900;
+
+		background: linear-gradient(
+			90deg,
+			#005495 20%,
+			#1078c7 40%,
+			#0039a8 100%
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@include media(md) {
+			font-size: 20px;
+		}
+
+		@include media(xl) {
+			font-size: 22px;
+		}
+	}
+}

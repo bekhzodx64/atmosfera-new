@@ -1,0 +1,35 @@
+.intro-info-title {
+	text-align: right;
+	font-family: Gilroy;
+	font-size: 36px;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1;
+	user-select: none;
+	text-align: center;
+
+	background: linear-gradient(90deg, #a473f3, #a277f5, #7d79fe, #5374fb);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	@include media(sm) {
+		font-size: 50px;
+	}
+
+	@include media(md) {
+		font-size: 60px;
+	}
+
+	@include media(lg) {
+		font-size: 80px;
+	}
+
+	@include media(xl) {
+		font-size: 90px;
+	}
+
+	@include media(xxl) {
+		font-size: 100px;
+	}
+}

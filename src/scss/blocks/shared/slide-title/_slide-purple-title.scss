@@ -1,0 +1,33 @@
+.slide-purple-title {
+	font-family: Gilroy;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-wrap: balance;
+	font-weight: 900;
+	text-shadow: 0px 4px 147px rgba(255, 255, 255, 0.25);
+
+	background: linear-gradient(90deg, #a473f3, #a277f5, #7d79fe, #5374fb 40%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	@include media(sm) {
+		font-size: 32px;
+	}
+
+	@include media(md) {
+		font-size: 46px;
+	}
+
+	@include media(lg) {
+		font-size: 56px;
+	}
+
+	@include media(xl) {
+		font-size: 64px;
+	}
+
+	@include media(xxl) {
+		font-size: 90px;
+	}
+}
