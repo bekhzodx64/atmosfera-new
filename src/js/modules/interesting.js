@@ -1,7 +1,7 @@
 async function interesting() {
 	const interestingFacts = document.querySelector('.interesting-facts')
 
-	const response = await fetch('../files/data/interesting.json')
+	const response = await fetch('./files/data/interesting.json')
 	const data = await response.json()
 
 	data.map((item) => {
