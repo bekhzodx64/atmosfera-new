@@ -18,7 +18,7 @@
 
 	@include media(xxl) {
 		max-width: 320px;
-		padding: 8px 16px 8px 12px;
+		// padding: 8px 16px 8px 12px;
 	}
 
 	&.transparent-purple {
@@ -84,10 +84,10 @@
 				height: 40px;
 			}
 
-			@include media(xxl) {
-				width: 64px;
-				height: 64px;
-			}
+			// @include media(xxl) {
+			// 	width: 64px;
+			// 	height: 64px;
+			// }
 		}
 	}
 }
