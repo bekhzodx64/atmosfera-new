@@ -1,0 +1,19 @@
+html {
+	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+	background-color: transparent;
+	width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #a473f3;
+	border-radius: 100px;
+	background-clip: content;
+}
+
+.fp-watermark {
+	display: none !important;
+}

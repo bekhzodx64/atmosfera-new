@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+@@include_once('components/shared/document-head/index.html', {"title": "Home page"})
+
+<body>
+	<!-- Noise layer -->
+	@@include('components/shared/noise/index.html')
+
+	<!-- Hamburger button -->
+	<button type="button" class="hamburger-button">
+		<span class="hamburger-button__line"></span>
+		<span class="hamburger-button__line"></span>
+		<span class="hamburger-button__line"></span>
+	</button>
+
+	<!-- Sidebar navigation -->
+	@@include('components/shared/navigation/index.html')
+
+	<div id="fullpage">
+		<!-- Intro block -->
+		@@include('components/pages/home/intro/index.html')
+
+		<!-- Why we need Atmosphere? -->
+		@@include('components/pages/home/slides/slide1.html')
+
+		<!-- Exosphere -->
+		@@include('components/pages/home/slides/slide2.html')
+
+		<!-- Termosphere -->
+		@@include('components/pages/home/slides/slide3.html')
+
+		<!-- Mezosphere -->
+		@@include('components/pages/home/slides/slide4.html')
+
+		<!-- Stratosphere -->
+		@@include('components/pages/home/slides/slide5.html')
+
+		<!-- Troposphere -->
+		@@include('components/pages/home/slides/slide6.html')
+
+		<!-- Interesting block -->
+		@@include('components/pages/home/interesting/index.html')
+	</div>
+
+	<!-- Modal -->
+	@@include('components/shared/modal/index.html')
+
+	<!-- Mobile menu -->
+	<div class="mobile-menu">
+		<ul class="mobile-menu__content" id="#menu">
+			<li>Atmosfera</li>
+			<li><img src="./img/earth.png" alt="earth" loading="lazy"></li>
+			<li><a href="#slide1" data-menuanchor="slide1" draggable="false">Ma’lumot</a></li>
+			<li><a href="#slide2" data-menuanchor="slide2" draggable="false">Ekzosfera</a></li>
+			<li><a href="#slide3" data-menuanchor="slide3" draggable="false">Termosfera</a></li>
+			<li><a href="#slide4" data-menuanchor="slide4" draggable="false">Mezosfera</a></li>
+			<li><a href="#slide5" data-menuanchor="slide5" draggable="false">Stratosfera</a></li>
+			<li><a href="#slide6" data-menuanchor="slide6" draggable="false">Troposfera</a></li>
+		</ul>
+	</div>
+
+	<script src=" ./js/index.bundle.js" defer></script>
+</body>
+
+</html>

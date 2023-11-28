@@ -1,0 +1,43 @@
+// Responsive
+@mixin media($breakpoint) {
+	@if map-has-key($breakpoints, $breakpoint) {
+		$breakpoint-value: map-get($breakpoints, $breakpoint);
+
+		@media (min-width: $breakpoint-value) {
+			@content;
+		}
+	} @else {
+		@error "Invalid breakpoint: #{$breakpoint}. Please use one of the defined breakpoints.";
+	}
+}
+
+// Font face
+@mixin font-face($font-name, $path, $weight: normal, $style: normal) {
+	@font-face {
+		font-family: quote($font-name);
+		src: url('./../files/fonts' + $path + '.eot');
+		src: url('./../files/fonts' + $path + '.eot?#iefix')
+				format('embedded-opentype'),
+			url('./../files/fonts' + $path + '.woff') format('woff'),
+			url('./../files/fonts' + $path + '.ttf') format('truetype'),
+			url('./../files/fonts' + $path + '.svg##{$font-name}') format('svg');
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
+// Truncate
+@mixin truncate($numLines: 1) {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+
+	@supports (-webkit-line-clamp: $numLines) {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: initial;
+		display: -webkit-box;
+		-webkit-line-clamp: $numLines;
+		-webkit-box-orient: vertical;
+	}
+}

@@ -1,0 +1,166 @@
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100dvh;
+
+	@include media(lg) {
+		justify-content: flex-start;
+	}
+
+	&-title {
+		font-family: Gilroy;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: transparent;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: white;
+		text-wrap: balance;
+		font-size: clamp(40px, 5vw, 100px);
+		padding: 40px 0;
+
+		text-align: center;
+
+		@include media(md) {
+			text-align-last: left;
+		}
+
+		@include media(xxl) {
+			text-align: center;
+		}
+
+		span {
+			font-family: Arial;
+			font-weight: 700;
+		}
+	}
+
+	&-info {
+		h2 {
+			text-align: right;
+			font-family: Gilroy;
+			font-size: 36px;
+			font-weight: 900;
+			text-transform: uppercase;
+			line-height: 1;
+			user-select: none;
+			text-align: center;
+
+			background: linear-gradient(
+				90deg,
+				#a473f3,
+				#a277f5,
+				#7d79fe,
+				#5374fb
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+
+			@include media(sm) {
+				font-size: 50px;
+			}
+
+			@include media(md) {
+				font-size: 60px;
+			}
+
+			@include media(lg) {
+				font-size: 80px;
+			}
+
+			@include media(xl) {
+				font-size: 90px;
+			}
+
+			@include media(xxl) {
+				font-size: 100px;
+			}
+		}
+
+		h3 {
+			font-family: Gilroy;
+			text-align: right;
+			font-weight: 800;
+			text-transform: uppercase;
+			user-select: none;
+			text-align: center;
+
+			background: linear-gradient(
+				90deg,
+				rgba(164, 115, 243, 0.2),
+				rgba(83, 116, 251, 0.2)
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke: 1px rgb(164, 115, 243);
+
+			@include media(xl) {
+				rotate: -7deg;
+				text-align: right;
+				margin-right: -50px;
+				margin-top: 20px;
+			}
+
+			span {
+				line-height: 1;
+
+				&:first-child {
+					font-size: 32px;
+
+					@include media(sm) {
+						font-size: 46px;
+					}
+
+					@include media(md) {
+						font-size: 58px;
+					}
+
+					@include media(xl) {
+						font-size: 130px;
+					}
+
+					@include media(xxl) {
+						font-size: 210px;
+					}
+				}
+				&:last-child {
+					font-size: 26px;
+
+					@include media(sm) {
+						font-size: 32px;
+					}
+
+					@include media(md) {
+						font-size: 46px;
+					}
+
+					@include media(xl) {
+						font-size: 100px;
+					}
+				}
+			}
+		}
+
+		&__description {
+			width: 100%;
+			color: $white;
+			font-size: 18px;
+			line-height: 1.5;
+			font-family: Roboto;
+			margin-top: 24px;
+
+			@include media(md) {
+				font-size: 20px;
+			}
+
+			@include media(lg) {
+				max-width: 680px;
+				font-size: 24px;
+				text-align: justify;
+				margin-left: auto;
+			}
+		}
+	}
+}

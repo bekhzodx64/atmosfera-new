@@ -1,0 +1,139 @@
+[
+    {
+        "cards": [
+            {
+                "distance": "10-20 km",
+                "image": "../img/interesting/1.jpg",
+                "title": "5-avlod qiruvchi samolyotlar"
+            }
+        ],
+        "distance": "20 km"
+    },
+    {
+        "cards": [],
+        "distance": "18 km"
+    },
+    {
+        "cards": [
+            {
+                "distance": "15-16 km",
+                "image": "../img/interesting/2.jpg",
+                "title": "Harbiy samolyotlar"
+            }
+        ],
+        "distance": "16 km"
+    },
+    {
+        "cards": [],
+        "distance": "14 km"
+    },
+    {
+        "cards": [
+            {
+                "distance": "9-12 km",
+                "image": "../img/interesting/3.jpg",
+                "title": "Yoʻlovchi samolyotlar"
+            },
+            {
+                "distance": "9-12 km",
+                "image": "../img/interesting/4.jpg",
+                "title": "Yuk tashuvchi samolyotlar"
+            }
+        ],
+        "distance": "12 km"
+    },
+    {
+        "cards": [
+            {
+                "distance": "10-11 km",
+                "image": "../img/interesting/5.jpg",
+                "title": "Afrika kalxati"
+            },
+            {
+                "distance": "10-11 km",
+                "image": "../img/interesting/6.jpg",
+                "title": "Togʻ gʻozi"
+            }
+        ],
+        "distance": "10 km",
+        "image": "../img/interesting/4.jpg"
+    },
+    {
+        "cards": [
+            {
+                "distance": "8,8 km",
+                "image": "../img/interesting/7.jpg",
+                "title": "Everest choʻqqisi (Nepal)"
+            }
+        ],
+        "distance": "8 km"
+    },
+    {
+        "cards": [],
+        "distance": "6 km"
+    },
+    {
+        "cards": [
+            {
+                "distance": "3-5 km",
+                "image": "../img/interesting/8.jpg",
+                "title": "Kondor qushi"
+            }
+        ],
+        "distance": "4 km"
+    },
+    {
+        "cards": [
+            {
+                "distance": "2-3 km",
+                "image": "../img/interesting/9.jpg",
+                "title": "Kulrang loyxoʻrak qushi"
+            },
+            {
+                "distance": "~2 km",
+                "image": "../img/interesting/10.jpg",
+                "title": "Sport samolyotlari"
+            }
+        ],
+        "distance": "2 km"
+    },
+    {
+        "cards": [],
+        "distance": "1 km"
+    },
+    {
+        "cards": [
+            {
+                "distance": "828 m",
+                "image": "../img/interesting/11.jpg",
+                "title": "Burj Xalifa binosi (BAA)"
+            }
+        ],
+        "distance": "700 m"
+    },
+    {
+        "cards": [
+            {
+                "distance": "678,9 m",
+                "image": "../img/interesting/12.jpg",
+                "title": "Merdeka minorasi (Malayziya)"
+            },
+            {
+                "distance": "634 m",
+                "image": "../img/interesting/13.jpg",
+                "title": "Tokio Skaytri teleminorasi (Yaponiya)"
+            }
+        ],
+        "distance": "500 m"
+    },
+    {
+        "cards": [
+            {
+                "distance": "116 m",
+                "image": "../img/interesting/14.jpg",
+                "title": "Kaliforniyadagi Sekvoya daraxti (AQSH)"
+            }
+        ],
+        "distance": "100 m"
+    }
+]

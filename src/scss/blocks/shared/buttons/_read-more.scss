@@ -1,0 +1,49 @@
+.read-more {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+	user-select: none;
+
+	&.purple-gradient {
+		p {
+			background: -webkit-linear-gradient(
+				45deg,
+				#a473f3,
+				#a277f5,
+				#7d79fe,
+				#5374fb
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	&.blue-gradient {
+		p {
+			background: linear-gradient(
+				90deg,
+				#005495 20%,
+				#1078c7 40%,
+				#0039a8 100%
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+	}
+
+	p {
+		font-family: SF-Pro;
+		font-size: 18px;
+		font-weight: 900;
+
+		@include media(md) {
+			font-size: 20px;
+		}
+
+		@include media(xl) {
+			font-size: 22px;
+		}
+	}
+}

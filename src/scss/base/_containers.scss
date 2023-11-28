@@ -1,0 +1,40 @@
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	@include media(sm) {
+		max-width: 640px;
+	}
+	@include media(md) {
+		max-width: 768px;
+	}
+	@include media(lg) {
+		max-width: 1024px;
+	}
+	@include media(xl) {
+		max-width: 1280px;
+	}
+}
+
+.container-right {
+	width: 100%;
+	padding: 0 20px;
+
+	@include media(md) {
+		margin-left: auto;
+		max-width: 70vw;
+		margin-right: 2vw;
+	}
+
+	@include media(lg) {
+		margin-left: auto;
+		max-width: 70vw;
+		margin-right: 5vw;
+	}
+
+	@include media(xxl) {
+		max-width: 65vw;
+		margin: 0 auto;
+	}
+}

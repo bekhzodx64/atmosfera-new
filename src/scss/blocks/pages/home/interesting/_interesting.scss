@@ -1,0 +1,229 @@
+.interesting {
+	min-height: 100dvh;
+	padding: 30px 0 50px;
+
+	&-title {
+		font-family: Gilroy;
+		font-weight: 900;
+		font-size: 50px;
+		text-transform: uppercase;
+		text-wrap: balance;
+		display: inline-block;
+
+		background: linear-gradient(
+			90deg,
+			rgba(0, 84, 149, 0.6) 4.02%,
+			rgba(16, 120, 199, 0.6) 63.5%,
+			rgba(0, 57, 168, 0.6) 127.35%
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 1px rgb(16, 120, 199);
+
+		@include media(md) {
+			font-size: 60px;
+		}
+
+		@include media(lg) {
+			font-size: 70px;
+		}
+
+		@include media(xl) {
+			font-size: 80px;
+		}
+	}
+
+	&-description {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		gap: 14px;
+
+		@include media(sm) {
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: flex-end;
+		}
+
+		&__question {
+			width: 100%;
+			max-width: 604px;
+			text-wrap: balance;
+
+			color: $black;
+			font-family: SF-Pro;
+			font-size: 18px;
+			font-weight: 500;
+
+			@include media(md) {
+				font-size: 20px;
+			}
+
+			@include media(lg) {
+				font-size: 22px;
+			}
+		}
+
+		&__height {
+			font-family: SF-Pro;
+			font-size: 16px;
+			font-weight: 500;
+			margin-left: auto;
+
+			background: linear-gradient(
+				90deg,
+				rgba(0, 84, 149, 0.6) 4.02%,
+				rgba(16, 120, 199, 0.6) 63.5%,
+				rgba(0, 57, 168, 0.6) 127.35%
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke: 1px rgb(16, 120, 199);
+
+			@include media(sm) {
+				font-size: 18px;
+			}
+
+			@include media(md) {
+				font-size: 20px;
+			}
+
+			@include media(lg) {
+				font-size: 22px;
+			}
+		}
+	}
+
+	&-facts {
+		margin-top: 40px;
+	}
+
+	&-row {
+		display: flex;
+		justify-content: space-between;
+		// gap: 20px;
+		gap: 10px;
+		padding: 20px 3px;
+		position: relative;
+		min-height: 114px;
+
+		@include media(lg) {
+			padding: 35px 3px;
+			border-bottom: 2px dashed #005495;
+			min-height: 191.6px;
+		}
+
+		span {
+			position: absolute;
+			left: -15px;
+			right: -15px;
+			height: 1px;
+			top: 55px;
+			transform: translateY(-50%);
+			border-bottom: 2px dashed #005495;
+			z-index: -1;
+
+			@include media(lg) {
+				display: none;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				transform: translateY(55%);
+				width: 10px;
+				height: 10px;
+				border-radius: 100px;
+				background-color: #0039a8;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transform: translateY(55%);
+				width: 10px;
+				height: 10px;
+				border-radius: 100px;
+				background-color: #0039a8;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: translateY(55%);
+			width: 10px;
+			height: 10px;
+			border-radius: 100px;
+			background-color: #0039a8;
+			display: none;
+
+			@include media(lg) {
+				display: block;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: translateY(55%);
+			width: 10px;
+			height: 10px;
+			border-radius: 100px;
+			background-color: #0039a8;
+			display: none;
+
+			@include media(lg) {
+				display: block;
+			}
+		}
+
+		&__cards {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 24px;
+
+			@include media(sm) {
+				flex-direction: row;
+			}
+		}
+
+		&__distance {
+			font-size: 24px;
+			margin-top: -14px;
+			// font-size: 80px;
+			font-family: Gilroy;
+			text-transform: uppercase;
+			font-weight: 900;
+			flex-shrink: 0;
+
+			background: linear-gradient(
+				90deg,
+				rgba(0, 84, 149, 0.6) 4.02%,
+				rgba(16, 120, 199, 0.6) 63.5%,
+				rgba(0, 57, 168, 0.6) 127.35%
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke: 1px rgb(16, 120, 199);
+
+			@include media(lg) {
+				margin-top: 0;
+				transform: translateY(20%);
+				font-size: 54px;
+			}
+		}
+	}
+}

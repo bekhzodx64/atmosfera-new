@@ -1,0 +1,254 @@
+.slide {
+	&-title {
+		font-family: Gilroy;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-wrap: balance;
+		font-weight: 900;
+		text-shadow: 0px 4px 147px rgba(255, 255, 255, 0.25);
+
+		@include media(sm) {
+			font-size: 32px;
+		}
+
+		@include media(md) {
+			font-size: 46px;
+		}
+
+		@include media(lg) {
+			font-size: 56px;
+		}
+
+		@include media(xl) {
+			font-size: 64px;
+		}
+
+		@include media(xxl) {
+			font-size: 90px;
+		}
+
+		&--purple-gradient {
+			background: linear-gradient(
+				90deg,
+				#a473f3,
+				#a277f5,
+				#7d79fe,
+				#5374fb 40%
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		&--blue-gradient {
+			background: linear-gradient(
+				90deg,
+				#005495 5%,
+				#1078c7 30%,
+				#0039a8 60%
+			);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		&:has(p) {
+			p {
+				line-height: 1;
+
+				&:first-child {
+					background: linear-gradient(
+						90deg,
+						#a473f3,
+						#a277f5,
+						#7d79fe,
+						#5374fb 40%
+					);
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				&:last-child {
+					background: linear-gradient(
+						90deg,
+						rgba(164, 115, 243, 0.2),
+						rgba(83, 116, 251, 0.2)
+					);
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					-webkit-text-stroke: 1px rgb(164, 115, 243);
+				}
+			}
+		}
+	}
+
+	&-description {
+		font-family: SF-Pro;
+		line-height: 1.5;
+		font-size: 18px;
+		color: $white;
+		margin-top: 12px;
+		transition: color 0.8s linear;
+		@include truncate(8);
+
+		@include media(sm) {
+			margin-top: 16px;
+		}
+
+		@include media(md) {
+			font-size: 20px;
+			margin-top: 20px;
+		}
+
+		@include media(lg) {
+			margin-top: 24px;
+		}
+
+		@include media(xl) {
+			margin-top: 26px;
+			font-size: 22px;
+		}
+
+		@include media(xxl) {
+			margin-top: 30px;
+		}
+
+		&.dark {
+			color: $black;
+		}
+
+		p {
+			&:first-child {
+				margin-top: 0;
+			}
+
+			margin-top: 8px;
+
+			@include media(sm) {
+				margin-top: 10px;
+			}
+
+			@include media(lg) {
+				margin-top: 12px;
+			}
+		}
+
+		ul {
+			margin-top: 8px;
+
+			@include media(sm) {
+				margin-top: 10px;
+			}
+
+			@include media(lg) {
+				margin-top: 12px;
+			}
+		}
+	}
+
+	&-button {
+		margin-top: 12px;
+
+		@include media(sm) {
+			margin-top: 20px;
+		}
+
+		@include media(md) {
+			margin-top: 24px;
+		}
+
+		@include media(lg) {
+			margin-top: 26px;
+		}
+
+		@include media(xl) {
+			margin-top: 30px;
+		}
+	}
+
+	&-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 14px 20px;
+		margin-top: auto;
+	}
+
+	&-1 {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 1;
+		padding: 20px 0;
+
+		@include media(sm) {
+			padding: 20px 0 30px;
+		}
+	}
+
+	&-2 {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 1;
+		padding: 20px 0;
+
+		@include media(sm) {
+			padding: 20px 0 30px;
+		}
+	}
+
+	&-3 {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 1;
+		padding: 20px 0;
+
+		@include media(sm) {
+			padding: 20px 0 30px;
+		}
+	}
+
+	&-4 {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 1;
+		padding: 20px 0;
+
+		@include media(sm) {
+			padding: 20px 0 30px;
+		}
+	}
+
+	&-5 {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 1;
+		padding: 20px 0;
+
+		@include media(sm) {
+			padding: 20px 0 30px;
+		}
+	}
+
+	&-6 {
+		display: flex;
+		flex-direction: column;
+		min-height: 100dvh;
+		position: relative;
+		z-index: 1;
+		padding: 20px 0;
+
+		@include media(sm) {
+			padding: 20px 0 30px;
+		}
+	}
+}

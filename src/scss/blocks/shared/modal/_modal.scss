@@ -1,0 +1,159 @@
+.modal {
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	inset: 0;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(10px);
+
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s linear;
+
+	&.show {
+		visibility: visible;
+		opacity: 1;
+
+		.modal-window {
+			transform: translateY(0);
+		}
+	}
+
+	&-window {
+		color: $white;
+		background-color: #171e2b;
+		padding: 50px 10px 15px 20px;
+		transform: translateY(-50%);
+		transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.8s;
+		position: relative;
+
+		&.light {
+			background-color: #d0ecff;
+			color: $black;
+		}
+
+		&__overlay {
+			position: absolute;
+			left: 0;
+			bottom: 15px;
+			right: 0;
+			height: 20vh;
+			width: 100%;
+			background: linear-gradient(transparent, #171e2b 90%);
+
+			transition: all 0.3s linear;
+			pointer-events: none;
+			opacity: 1;
+
+			&.hide {
+				opacity: 0;
+			}
+
+			&.light {
+				background: linear-gradient(transparent, #d0ecff 80%);
+			}
+
+			@include media(lg) {
+				height: 30vh;
+			}
+		}
+
+		@include media(sm) {
+			padding: 50px 10px 30px 30px;
+		}
+
+		@include media(md) {
+			padding: 50px 20px 50px 50px;
+		}
+
+		@include media(lg) {
+			max-width: 768px;
+			padding: 50px 20px 50px 80px;
+		}
+
+		@include media(xl) {
+			max-width: 1024px;
+			padding: 50px 20px 50px 150px;
+		}
+
+		@include media(xxl) {
+			max-width: 1200px;
+		}
+	}
+
+	&-close {
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		cursor: pointer;
+		right: 20px;
+		top: 20px;
+		width: 36px;
+		height: 36px;
+		border-radius: 100px;
+		background-color: #171e2b;
+		display: none;
+
+		@include media(md) {
+			display: flex;
+		}
+	}
+
+	&-content {
+		height: 100%;
+		overflow-y: auto;
+		font-family: SF-Pro;
+		font-size: 18px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		// padding-right: 50px;
+		padding-right: 10px;
+		line-height: 1.4;
+		// text-align: justify;
+
+		@include media(md) {
+			font-size: 20px;
+			gap: 16px;
+			padding-right: 20px;
+		}
+
+		@include media(lg) {
+			font-size: 22px;
+			gap: 20px;
+			padding-right: 30px;
+		}
+	}
+
+	&-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 14px 20px;
+	}
+
+	&-next {
+		display: inline-block;
+		margin: 0 auto;
+		font-family: BadScript;
+		margin-bottom: 50px;
+
+		font-size: 40px;
+		line-height: 1.6;
+		cursor: pointer;
+		background: linear-gradient(
+			90deg,
+			#a473f3,
+			#a277f5,
+			#7d79fe,
+			#5374fb 40%
+		);
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@include media(md) {
+			font-size: 50px;
+		}
+	}
+}

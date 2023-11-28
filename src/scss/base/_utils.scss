@@ -1,0 +1,43 @@
+.hidden {
+	display: none !important;
+}
+
+.page {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	footer {
+		margin-top: auto;
+	}
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+
+	@include media(md) {
+		padding-right: 16px;
+	}
+}
+
+.no-select {
+	display: block;
+	user-select: none;
+}
+
+.relative {
+	position: relative;
+}

@@ -1,0 +1,33 @@
+.distance-info {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	color: $white;
+	margin-top: 8px;
+	transition: color 0.8s linear;
+
+	&.dark {
+		color: $black;
+	}
+
+	&__row {
+		font-family: SF-Pro;
+		// font-size: 22px;
+		font-size: 18px;
+		display: flex;
+		align-items: flex-end;
+		gap: 5px;
+
+		@include media(md) {
+			font-size: 20px;
+		}
+
+		@include media(xl) {
+			font-size: 22px;
+		}
+
+		h4 {
+			font-weight: 700;
+		}
+	}
+}

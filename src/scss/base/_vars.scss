@@ -1,0 +1,26 @@
+// Breakpoints
+$breakpoints: (
+	sm: 640px,
+	md: 768px,
+	lg: 1024px,
+	xl: 1280px,
+	xxl: 1536px,
+);
+
+// Colors
+$main-blue: #2a46ff;
+$main-dark: #1a2433;
+$main-gray: #747474;
+$main-light: #f4f6ff;
+
+$support-yellow: #fbc800;
+$support-dark: #2d405c;
+$support-lightblue: #d2e4ff;
+
+$black: #0b161f;
+$white: #ffffff;
+
+// Shadows
+$shadow-1: 0px 16px 24px 0px #2a46ff14;
+$shadow-2: 8px 8px 16px 0px #2a46ff14;
+$shadow-3: 8px 8px 4px 0px #2a46ff14;
