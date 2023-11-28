@@ -78,7 +78,7 @@ function page() {
 	})
 
 	// Readmore modal
-	const readMoreButtons = document.querySelectorAll('.read-more')
+	const readMoreButtons = document.querySelectorAll('#read-more')
 	const modal = document.querySelector('.modal')
 	const modalContent = document.querySelector('.modal-content')
 	const closeModalButton = document.querySelector('.modal-close')
