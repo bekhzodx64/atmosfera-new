@@ -8,7 +8,7 @@ function page() {
 	let data = []
 
 	async function getData() {
-		const response = await fetch('../files/data/data.json')
+		const response = await fetch('./files/data/data.json')
 		data = await response.json()
 	}
 
